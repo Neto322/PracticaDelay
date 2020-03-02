@@ -236,8 +236,21 @@ namespace Reproductor
 
             lblOffsetDelay.Content = ((int)(sldOffsetDelay.Value)).ToString();
             
+            if (EfectoDelay != null)
+            {
 
+                EfectoDelay.OffsetMilisegundos = (int)(sldOffsetDelay.Value);
+
+
+            }
         }
 
+        private void SldGananciaDelay_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (EfectoDelay != null)
+            {
+                lblOffsetDelay.Content = sldGananciaDelay.Value.ToString("n");
+            }
+        }
     }
 }

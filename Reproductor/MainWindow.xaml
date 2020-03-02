@@ -29,8 +29,12 @@
         <Label Content="Duracion:" HorizontalAlignment="Left" Margin="318,142,0,0" VerticalAlignment="Top" Width="69"/>
         <Label Content="Delay" HorizontalAlignment="Left" Margin="54,187,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblOffsetDelay" Content="1.5" HorizontalAlignment="Left" Margin="160,245,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="sldOffsetDelay" HorizontalAlignment="Left" Margin="54,227,0,0" VerticalAlignment="Top" Width="146" Value="1501" ValueChanged="SldOffsetDelay_ValueChanged" Maximum="10000" Minimum="1"/>
+        <Slider x:Name="sldOffsetDelay" HorizontalAlignment="Left" Margin="54,227,0,0" VerticalAlignment="Top" Width="146" Value="1500" ValueChanged="SldOffsetDelay_ValueChanged" Maximum="10000"/>
         <Label Content="Offset" HorizontalAlignment="Left" Margin="157,201,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ganancia" HorizontalAlignment="Left" Margin="285,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblOffsetDelay_Copy" Content="0.5&#xD;&#xA;" HorizontalAlignment="Left" Margin="391,245,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="sldGananciaDelay" HorizontalAlignment="Left" Margin="285,227,0,0" VerticalAlignment="Top" Width="146" Value="1500"  Maximum="1" ValueChanged="SldGananciaDelay_ValueChanged"/>
+        <Label Content="Ganancia" HorizontalAlignment="Left" Margin="388,201,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
